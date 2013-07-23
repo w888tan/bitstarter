@@ -13,6 +13,25 @@
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
 
 <style type="text/css">
+p1.oblique {font-style:oblique;}
+em {
+display:block;
+}
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height = 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
 
 /*Large desktop*/
 @media (min-width:980px) {
@@ -45,6 +64,7 @@ border-top: 1px white solid;
 /*Main body and headings*/
 body {
 font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+background-color: hsl(120,65%,75%); 
 }
 
 .heading, .subheading {
@@ -133,19 +153,24 @@ data-toggle="collapse" data-target=".nav-collapse">
 <div class="container">      
 <div class="row-fluid heading">        
 <div class="span12">          
-<h1>Product</h1>        
+<h1>FoodChains</h1>       
 </div>      
 </div>       
 <div class="row-fluid subheading">        
 <div class="span12">          
 <!--special typography from bootstrap for lead paragraph-->
 
-<p class="lead">One line sentence.</p>        
+<p class="lead">Linking organic products to the demands of the market and preserving better food systems.</p>       
 </div>      
 </div>      
 <div class="row-fluid pitch">        
 <div class="span5 offset1 video">          
-<img class="img-polaroid" src="http://placehold.it/480x300">        
+<div class="video-container">
+<iframe title="YouTube video player" class="youtube-player" type="text/html" 
+width="380" height="300" src="http://www.youtube.com/embed/OmrfrsnWng8"
+frameborder="0" allowFullScreen></iframe>
+</div>
+<!--<img class="img-polaroid" src="http://placehold.it/480x300">-->        
 </div>        
 
 <!--we define new 'actions' div to contain statistics, order, and share buttons-->
@@ -157,12 +182,12 @@ data-toggle="collapse" data-target=".nav-collapse">
 <!-- linedivl and r give dividing lines that look diff in horizontal and veritcal layouts, illustrating media queries-->
 
 <div class="linediv-l">                
-<h3>1000</h3> <p>backers</p>                
+<h3>0</h3> <p>backers</p>                
 </div>              
 </div>              
 <div class="span4">                
 <div class="linediv-c">                  
-<h3>$6000</h3> <p>of $10,000</p>                
+<h3>$0</h3> <p>of $10,000</p>                
 </div>              
 </div>              
 <div class="span4">                
@@ -183,7 +208,7 @@ data-toggle="collapse" data-target=".nav-collapse">
 <div class="span6 offset3 order">            
 
 <!--standard bootstrap button-->
-<button class="btn btn-success btn-large">Preorder</button>          
+<button class="btn btn-success btn-large">Support</button>          
 </div>          
 <div class="span8 offset2 social">            
 <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button><button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>          
@@ -196,21 +221,35 @@ data-toggle="collapse" data-target=".nav-collapse">
 
 <div class="row-fluid section1">        
 <div class="span5 offset1 asset">          
-<img class="img-polaroid" src="http://placehold.it/480x300">        
+<a href="http://i.imgur.com/iOV7sBe.jpg">
+<img class="corn" src="http://i.imgur.com/iOV7sBe.jpg">
+</a>       
 </div>        
 <div class="span5 copy">          
-<p> Lorem ipsum dolar ist amet consectetur           
-</p>        
+<p1 class="oblique"> This site provides both organic suppliers and buyers to source, communicate and identify opportunities; at the same time, allowing the community to contribute to sustainable farm businesses. Some suppliers find it difficult to break into the market. For buyers, they might want to find products that are not grown locally. For suppliers, like farmers, they can ask what is needed for them to create a niche market or offer their unique products. By communication, farmers can plan and not overproduce, saving them the effort of finding another buyer for the extra supply. For the customer, it will be finding quality and unique products and offering long-term food and farm future. 
+</p1>      
 </div>        
 </div>
 <div class="row-fluid section2">
 <div class="span5 offset1 copy copy-right">
 <p>
-Lorem ipsum dollar sit amet, consectetur adipsising elits.
+
+<em>How does this work for suppliers:  </em>
+<li>Create profile for your farm </li>
+<li>Tag product lines</li> 
 </p>
+<p>
+<em>How does this work for customers: </em>
+<li>Search for product and contact suppliers</li> 
+<li>Create a business relationship</li>
+</p>
+<p>
+<em>Customers like individuals, chefs, restaurants, farm markets, corporations can support by linking with the suppliers or by donating to your favorite supplier.</em>
+
+</p> 
 </div>
 <div class="span5 asset">          
-<img class="img-polaroid" src="http://placehold.it/480x300">        
+<img class="img-polaroid" src="http://i.imgur.com/MhvvBMA.gif">        
 </div>      
 </div>      
 
